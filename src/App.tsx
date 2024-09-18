@@ -8,7 +8,7 @@ const MasterWrapper = styled.div`
 
 export const App = () => {
     useEffect(() => {
-        fetch("http://localhost:8000/posts")
+        fetch("https://applications-manager-coral.vercel.app/posts")
             .then((response) => response.json())
             .then((data) => console.log(data));
     }, []);
